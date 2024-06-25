@@ -6,14 +6,62 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
     <link rel="stylesheet" href="/css/style.css">
-    <title>My Webpage</title>
+    <title>Sandwich Simulator</title>
 </head>
 <body>
     <!-- Your content goes here -->
-    <h1>Hello World!</h1>
-    <div id="kitty">
-        <img src="images/kitten.jpg" alt="This is a kitten.">
-        <button id="btn">Click me</button>
-    </div>
+    <h1>Welcome to Sandwich Simulator</h1>
+    <form>
+        <label for = "sammyName">Your Sammy's Name:</label>
+        <input type = "text" id = "sammyName" name = "sammyName" required>
+
+        <div>
+            <p>Choose a bread:</p>
+            <label for = "sourdough">Sourdough</label>
+            <input type = "radio" id = "Sourdough" name ="bread" value = "Sourdough">
+            <br>
+            <label for ="whole wheat">Whole Wheat</label>
+            <input type = "radio" id = "whole wheat" name = "bread" value = "whole wheat">
+            <br>
+            <label for = "Italin Herb and Cheese">Italin Herb and Cheese</label>
+            <input type = "radio" id = "Italin Herb and Cheese" name ="bread" value = "Italin Herb and Cheese">
+        </div>
+
+        <div>
+            <br><label for ="protein">Choose a protein:</label>
+            <select id=""protein">
+            <option value="salami">Salami</option>
+            <option value="ham">Ham</option>
+            <option value="turkey">Turkey</option>
+            <option value="meatballs">Meatballs</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Choose the toppings:</p>
+            <label for ="lettuce">Lettuce</label>
+            <input type="checkbox" id="lettuce" name="toppings" value="lettuce"><br>
+            <label for ="tomatos">Tomatos</label>
+            <input type="checkbox" id="Tomatos" name="toppings" value="Tomatos"><br>
+            <label for="pickles">Pickles</label>
+            <input type="checkbox" id="Pickles" name="toppings" value="Pickles"><br>
+        </div>
+
+        <div>
+            <p>Choose the sauce(s):</p>
+            <label for ="mayo">Mayo</label>
+            <input type="checkbox" id="mayo" name="sauce" value="mayo"><br>
+            <label for ="mustard">Mustard</label>
+            <input type="checkbox" id="mustard" name="sauce" value="mustard"><br>
+            <label for ="ketchup">Ketchup</label>
+            <input type="checkbox" id="ketchup" name="sauce" value="ketchup"><br>
+        </div>
+
+        <br><input type="submit" id id="Submit" name="Submit" value="Submit">
+
+    </form>
+
+
+
 </body>
 </html>
